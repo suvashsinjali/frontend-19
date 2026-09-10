@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @font-face {
+        font-family: "clock-font";
+        src: url("fonts/fonts-DSEG_v046/DSEG14-Classic/DSEG14Classic-Bold.woff2")
+          format("woff2");
+        font-weight: bold;
+      }
+
+      @theme {
+        --font-digital: "clock-font", monospace;
+      }
+    </style>
+    <title>Digital copy</title>
+  </head>
+  <body class="h-screen bg-rose-400 flex items-center justify-center text-6xl">
+    <div class="font-digital text-cyan-300 flex flex-col gap-3 items-center">
+      <h1 class="text-7xl">Digital Clock</h1>
+      <p id="time"></p>
+    </div>
+
+    <script>
+      const time = document.getElementById("time");
+
+      function updateTime() {
+        const date = new Date();
+
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+
+        const period = hours >= 12 ? "pm" : "am";
+        hours = hours % 12 || 12;
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        time.textContent = `${hours}:${minutes}:${seconds} ${period}`;
+      }
+
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        animation: move 2s infinite ease-in-out;
+      }
+
+      @keyframes move {
+        0% {
+          background-color: red;
+          transform: translate(0px, 0px);
+        }
+        25% {
+          background-color: green;
+          transform: translate(100px, 0px);
+        }
+        50% {
+          background-color: rgb(250, 242, 24);
+          transform: translate(100px, 100px);
+        }
+        75% {
+          background-color: rgb(65, 21, 242);
+          transform: translate(0px, 100px);
+        }
+        100% {
+          background-color: rgb(223, 28, 155);
+          transform: translate(0px, 0px);
+        }
+      }
+
+      .box2 {
+        margin-top: 200px;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: bisque;
+        animation: rotate 10s infinite;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg), translateX(250px), rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg), translateX(250px), rotate(-360deg);
+        }
+      }
+
+      div img {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">box1</div>
+
+    <div class="box2">box1</div>
+
+    <div>
+      <img src="./bg-frame.svg" alt="" />
+    </div>
+  </body>
+</html>

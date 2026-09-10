@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+span {
+  color: red;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+main {
+  width: 600px;
+  margin: 0 auto;
+  background: linear-gradient(#e7b946, #e097e4, rgb(181, 229, 171));
+  /* background: radial-gradient(#e38d7c, #276017, rgb(227, 230, 54)); */
+}
+
+div.button {
+  margin: 0 auto;
+  width: 150px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: rgb(40, 101, 232);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="range"],
+input#hostel-choice,
+input[type="month"] {
+  width: auto;
+}
+
+input[type="color"] {
+  width: 100px;
+  height: 50px;
+}
+
+legend {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+button:hover,
+input[type="color"]:hover,
+input[type="range"] {
+  cursor: pointer;
+}
+
+fieldset {
+  border-style: none;
+}

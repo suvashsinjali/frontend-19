@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .container {
+        height: 100vh;
+        position: relative;
+      }
+      .header {
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: antiquewhite;
+        padding: 0 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        /* width: 100%; */
+      }
+
+      nav ul {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+      }
+      li a {
+        text-decoration: none;
+        border: 1px solid rebeccapurple;
+        padding: 5px 10px;
+      }
+
+      .content {
+        border: 1px solid black;
+        margin-top: 100px;
+        height: 500px;
+        width: 500px;
+        display: flex;
+      }
+
+      .content > div {
+        width: 100px;
+        height: 80px;
+        border: 1px solid black;
+      }
+      footer {
+        border: 1px solid black;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h1>My website</h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Masterclass</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="content">
+          <div class="child1">child1</div>
+          <div class="child2">child2</div>
+          <div class="child3">child3</div>
+          <div class="child4">child4</div>
+        </section>
+      </main>
+      <footer>@copyright 2026</footer>
+    </main>
+  </body>
+</html>

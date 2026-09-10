@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <main>
+      <form action="" method="get">
+        <fieldset>
+          <legend draggable="true" contenteditable="true">
+            College Registration Form
+          </legend>
+
+          <h4 title="Fill out the form to get enroll">
+            Please fill all that are required <span>*</span>
+          </h4>
+          <div>
+            <label for="name">Full Name: <span>*</span> </label
+            ><input
+              tabindex="-1"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              minlength="5"
+              required
+            />
+          </div>
+          <!-- Used tabindex-1 in input to remove from keyboard tab focus -->
+
+          <div>
+            <label for="age">Age: <span>*</span></label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              min="18"
+              max="35"
+              placeholder="18+"
+            />
+          </div>
+          <div>
+            <label for="email">Email: <span>*</span></label
+            ><input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <div>
+            <label for="contact">Contact: <span>*</span></label
+            ><input
+              type="tel"
+              id="contact"
+              name="contact"
+              placeholder="+9779811111111"
+            />
+          </div>
+
+          <div>
+            <label for="pwd">Password: <span>*</span></label
+            ><input type="password" id="pwd" name="pwd" />
+          </div>
+
+          <div>
+            <label for="pwd">Confirm Password: <span>*</span></label
+            ><input type="password" id="pwd" name="pwd" />
+          </div>
+
+          <div>
+            <label for="date">SEE Passed Year:</label>
+            <input tabindex="1" type="month" name="date" id="date" />
+          </div>
+          <!-- With positive integer in tabindex like tabindex="1" forces keyword tab focus first. -->
+
+          <div>
+            <label for="color">Favourite Color:</label>
+            <input type="color" name="color" id="color" />
+          </div>
+
+          <div>
+            <h3>Gender <span>*</span></h3>
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" id="gender" value="male" />
+
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" id="gender" value="female" />
+
+            <label for="gender">Other</label>
+            <input type="radio" name="gender" id="gender" value="other" />
+          </div>
+
+          <div>
+            <h3>What are your Hobbies</h3>
+            <label for="hobby">Football</label>
+            <input type="checkbox" id="hobby" name="hobby" value="football" />
+
+            <label for="hobby">Cricket</label>
+            <input type="checkbox" id="hobby" name="hobby" value="cricket" />
+
+            <label for="hobby">Dance</label>
+            <input type="checkbox" id="hobby" name="hobby" value="dancing" />
+
+            <label for="hobby">Reading Books</label>
+            <input type="checkbox" id="hobby" name="hobby" value="reading" />
+          </div>
+
+          <!-- Select, option, and optgroup -->
+          <div>
+            <label for="faculty">Choose Your Major: <span>*</span> </label>
+            <select name="faculty" id="faculty">
+              <!-- <option value="empty">...</option> -->
+              <option value="Math" selected>Math</option>
+              <option value="English">English</option>
+              <optgroup label="Science">
+                <option value="Biology">Biology</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+              </optgroup>
+              <option value="Computer Science">Computer Science</option>
+            </select>
+          </div>
+
+          <!-- datalist -->
+          <div>
+            <label for="hostel-choice">Choose a hostel room sharing:</label>
+            <input
+              list="hostel-room-list"
+              id="hostel-choice"
+              name="hostel-choice"
+            />
+            <datalist id="hostel-room-list">
+              <option value="2-sharing"></option>
+              <option value="4-sharing"></option>
+              <option value="6-sharing"></option>
+            </datalist>
+          </div>
+
+          <div>
+            <label for="cv">Upload CV: <span>*</span> </label>
+            <input type="file" id="cv" name="cv" />
+          </div>
+
+          <div>
+            <label for="distance">Overall your experience:</label>
+            <input type="range" name="distance" id="distance" />
+          </div>
+
+          <div>
+            <label for="feedback">Feedback:</label>
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="40"
+              rows="5"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <div class="button">
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+section.content {
+  display: flex;
+  gap: 10px;
+  width: 600px;
+  height: 500px;
+  border: 1px solid black;
+  /* flex: 1; */
+  flex-wrap: wrap;
+}
+
+.content > div {
+  width: 100px;
+  border: 1px solid black;
+  height: 100px;
+}
+
+.child1 {
+  background-color: red;
+  flex: 1;
+}
+
+.child2 {
+  background-color: aqua;
+  flex: 2;
+}
+
+.child3 {
+  background-color: yellow;
+  flex: 1;
+}
+
+.child4 {
+  background-color: blue;
+  flex: 2;
+}

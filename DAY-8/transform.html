@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      .container {
+        perspective: 1000px;
+      }
+      div.box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 20px;
+      }
+
+      .box1 {
+        background-color: aqua;
+        transform: rotate(-90deg);
+      }
+      .child {
+        transform: rotate(90deg);
+        text-align: center;
+      }
+
+      .box2 {
+        background-color: wheat;
+        transform: skewY(5deg) translate(100%);
+        position: relative;
+      }
+
+      .box2::before {
+        content: "content";
+        position: absolute;
+        top: 20px;
+      }
+
+      .box3 {
+        background-color: brown;
+        /* perspective: 500px; */
+        /* transform: rotateY(45deg), scaleZ(3); */
+      }
+
+      .box3:hover {
+        transform: rotateY(180deg), translateZ(150px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        box1
+        <div class="child">child</div>
+      </div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+      <div class="box box4">box4</div>
+    </div>
+  </body>
+</html>

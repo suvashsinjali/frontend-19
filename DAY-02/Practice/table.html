@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      details {
+        margin-top: 20px;
+      }
+
+      video {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>S.N.</th>
+            <th>Product</th>
+            <th>Total Production</th>
+            <th>Price Per kg</th>
+            <th>Image</th>
+          </tr>
+          <tr>
+            <th>1.</th>
+            <th>Apple</th>
+            <td>500 (Kg)</td>
+            <td>Rs.120</td>
+            <td>
+              <img src="./apple.jpg" alt="apple" height="50px" width="80px" />
+            </td>
+          </tr>
+          <tr>
+            <th>2.</th>
+            <th>Mango</th>
+            <td>400 (kg)</td>
+            <td>Rs.150</td>
+            <td>
+              <img src="./mango.jpg" alt="mango" height="50px" width="80px" />
+            </td>
+          </tr>
+          <tr>
+            <th>3.</th>
+            <th>Orange</th>
+            <td>600kg</td>
+            <td>Rs.90</td>
+            <td>
+              <img src="./orange.jpg" alt="orange" height="50px" width="80px" />
+            </td>
+          </tr>
+        </thead>
+      </table>
+    </main>
+
+    <details>
+      <summary>Click here to view the hidden content</summary>
+      <p>This is the hidden content that appears when you click the summary.</p>
+    </details>
+
+    <br />
+
+    <iframe
+      style="height: 500px"
+      src="./form.html"
+      width="600"
+      height="100"
+      title="Example Website"
+    ></iframe>
+
+    <br />
+
+    <video controls width="640" height="360" poster="./apple.jpg" volume="0.5">
+      <source src="./Bayaan _ Sherazam - Safar.mp4" type="video/mp4" />
+      <source src="./Bayaan _ Sherazam - Safar.mp4" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+    <br />
+
+    <audio controls>
+      <source
+        src="./intensity-by-audio-club-intensity-by-audio-club-343637.mp3"
+        type="audio/mpeg"
+      />
+      <source
+        src="./intensity-by-audio-club-intensity-by-audio-club-343637.mp3"
+        type="audio/ogg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+  </body>
+</html>
+
+<p>2<sup>3</sup></p>
+<p>2<sub>3</sub></p>

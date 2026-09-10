@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Document" />
+    <!-- for search -->
+    <link rel="icon" href="./Screenshot (4).png" />
+    <!-- for tab icon -->
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 title="hello world">Hello, World!</h1>
+
+        <nav>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#sec-2">About</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button>Login</button>
+          <button>Download CV</button>
+        </div>
+      </header>
+
+      <article>
+        <h2>Article section</h2>
+      </article>
+
+      <section>
+        <h2>Suvash Sinjali</h2>
+
+        <figure>
+          <figcaption>This is the keyword</figcaption>
+          <img src="./Screenshot (4).png" alt="keyword" height="500px" />
+        </figure>
+      </section>
+
+      <section id="sec-2">
+        <h2>Suvash Sinjali</h2>
+
+        <figure>
+          <figcaption>This is the keyword</figcaption>
+          <img src="./Screenshot (4).png" alt="keyword" height="500px" />
+        </figure>
+      </section>
+
+      <aside>
+        <h2>Aside section</h2>
+      </aside>
+
+      <!-- Description List, Description Term, and Description Details -->
+      <dl>
+        <dt>HTML</dt>
+        <dd>
+          HTML stands for HyperText Markup Language, it is used to create
+          structure of a webpage.
+        </dd>
+
+        <dt>CSS</dt>
+        <dd>
+          CSS stands for Cascading StyleSheet it gives style to HTML elements
+        </dd>
+      </dl>
+
+      <picture>
+        <!-- Load a smaller image for mobile screens -->
+        <media query="(max-width: 600px)" srcset="1.sm.jpg">
+          <!-- Load a next-gen WebP format if browser supports -->
+        <source srcset="1.webp" type="image/webp">
+        <img src="1.sm.jpg" alt="scenic mountain view">
+
+      </picture>
+    </main>
+
+    <footer>@copyright 2026</footer>
+  </body>
+</html>

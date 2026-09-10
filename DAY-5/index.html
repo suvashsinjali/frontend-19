@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <style>
+      .container {
+        /* height: 100vh; */
+        /* position: relative; */
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+        border: 1px solid black;
+        position: fixed;
+        margin-top: 0px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+      }
+
+      .content {
+        position: relative;
+        margin-top: 200px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>My website</h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Masterclass</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="content">
+          <div class="child1">child1</div>
+          <div class="child2">child2</div>
+          <div class="child3">child3</div>
+          <div class="child4">child4</div>
+        </section>
+      </main>
+      <footer>@copyright 2026</footer>
+    </div>
+  </body>
+</html>
